@@ -1,0 +1,48 @@
+.game {
+  background-color: #9c9;
+  padding: 5px;
+}
+
+.card {
+  margin: 10px;
+  -webkit-perspective: 600;
+  width: 80px;
+  height: 120px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.face {
+  position: absolute;
+  transition: all .5s;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.front {
+  background-color: #966;
+  z-index: 10;
+}
+
+.back {
+  transform: rotate3d(0,1,0,-180deg);
+  z-index: 8;
+}
+
+.card-flipped .front {
+  transform: rotate3d(0,1,0,180deg);
+  z-index: 8;
+}
+
+.card-flipped .back {
+  transform: rotate3d(0,1,0,0deg);
+  z-index: 10;
+}
+
+img {
+  min-width: 80px;
+  max-height: 120px;
+  border-radius: 8px;
+}

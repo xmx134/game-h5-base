@@ -1,0 +1,24 @@
+body {
+  background-color: #aaa;
+}
+.card {
+  width: 80px;
+  margin: 20px;
+  border-radius: 8px;
+  background-color: #efefef;
+  position: absolute;
+  transition: all 1s linear;
+}
+img {
+  width: 80px;
+  border-radius: 8px;
+}
+
+
+.rotateRight {
+  transform: rotate3D(0, 0, 1, 90deg) translate3D(30px, -80px, 0);
+}
+
+.moveAndScale {
+  transform: translate3d(300px, 300px, 0) scale3d(1.5, 1.5, 1);
+}
