@@ -3,8 +3,14 @@
   padding: 5px;
 }
 
+.cards {
+  position: relative;
+  width: 380px;
+  height: 400px;
+}
+
 .card {
-  margin: 10px;
+  position: absolute;
   -webkit-perspective: 600;
   width: 80px;
   height: 120px;
@@ -45,4 +51,8 @@ img {
   min-width: 80px;
   max-height: 120px;
   border-radius: 8px;
+}
+
+.card-removed {
+  opacity: 0;
 }
